@@ -39,7 +39,7 @@ namespace taller2.Controllers
 
         public async Task<IActionResult> RegisterTicket(int id)
            {  
-             if (id < 1 ||id> 5000) { ModelState.AddModelError(string.Empty, "Ya existe un país con el mismo nombre");
+             if (id < 1 ||id> 5000) { ModelState.AddModelError(string.Empty, "El ticket no es valido");
 
                   return Index();
               }
