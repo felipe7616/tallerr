@@ -1,0 +1,18 @@
+﻿@model IEnumerable<taller2.Data.Ticket>
+@{
+    ViewData["Title"] = "Inicio";
+}
+
+<div class="text-center">
+
+      
+       <input type="text" name="Id"/>     
+    <p>
+    <a asp-action="RegisterTicket" class="btn btn-outline-primary">Registrar ticket</a>
+</p>
+
+
+</div>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

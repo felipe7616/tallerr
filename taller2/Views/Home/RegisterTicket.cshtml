@@ -1,0 +1,20 @@
+﻿@model IEnumerable<taller2.Data.Ticket>
+@{
+    ViewData["Title"] = "RegisterTicket";
+}
+
+
+
+
+<h1>Registrar ticket</h1>
+       <input type="text" name="Document"/>     
+       <p>DOcumento</p>
+         <input type="text" name="Name"/>     
+       <p>Nombre</p>
+       <div id="current_date"></p>
+<script>
+ document.getElementById("current_date").innerHTML = Date();
+</script>
+        <div class="form-group mt-2">
+                <input type="submit" value="Guardar" class="btn btn-outline-primary" />
+            </div>
